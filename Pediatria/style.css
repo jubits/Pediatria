@@ -1,0 +1,382 @@
+html {
+    max-width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(Fundo.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Pagina Inicio */
+
+header {
+    background-color: #f4f8fe;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    padding: 10px 0px;
+}
+
+header h1 {
+    list-style: none;
+    margin-left: 50px;
+    color: #065c87;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 10px 15px;
+    padding-right: 30px;
+}
+
+header nav ul li a {
+    color: #065c87;
+    text-decoration: none;
+    font-family: 'League Spartan';
+}
+
+header nav ul li a:hover {
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+  
+
+
+/* Carrossel */
+
+.carrossel-container {
+    margin: auto;
+    width: 100%;
+    height: 80vh;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: 90%;
+}
+
+/* Sobre */
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 65px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#sobre img {
+    width: 400px;
+    height: 355px;
+    border-radius: 20px;
+}
+
+#sobre div {
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    gap: 50px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+#sobre h2 {
+    color: #065c87;
+    font-size: 40px;
+}
+
+#sobre p {
+    font-family: 'Codec pro', sans-serif;
+    color: #065c87;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Cards */
+
+#missao-valores {
+    display: flex;
+    gap: 90px;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+#missao-valores .card {
+    background-color: #ebf0f4;
+    border: 1px solid #310663;
+    border-radius: 8px;
+    padding: 20px;
+    width: 430px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#missao-valores .card:hover {
+    background-color: #065c87;
+    border: 1px solid #e0d5ec;
+    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
+    color: #e0d5ec;
+}
+
+#missao-valores .card:hover h3,
+#missao-valores .card:hover p {
+    color: #fffbfb;
+}
+
+#missao-valores .card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #065c87;
+}
+
+#missao-valores .card p {
+    color: #55515d;
+    line-height: 1.6;
+}
+
+/* Informativo */
+
+.informativo{
+    font-size: 50px;
+    margin-left: 190px;
+    color: #065c87;
+
+}
+
+#cuidados {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.informacao-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 200px;
+}
+
+.informacao-botao {
+    padding: 10px 20px;
+    color: #065c87;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.3s;
+    border-bottom: 2px solid #ddd;
+}
+
+.informacao-botao:hover {
+    background-color: #cce7f3;
+}
+
+.informacao-botao.active {
+    background-color: #065c87;
+    color: white;
+}
+
+#informacao-conteudo {
+    flex-grow: 1;
+    padding: 30px;
+    border-left: 2px solid #ddd;
+    margin-top: 20px;
+}
+
+#informacao-conteudo h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #065c87;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+#informacao-conteudo p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #065c87;
+    font-weight: normal;
+}
+
+#informacao-conteudo ul,
+li,
+h3 {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #065c87;
+    font-weight: normal;
+}
+
+/* Seção Crescimento e Desenvolvimento */
+
+#crescimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 80px;
+    max-width: 980px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    padding-top: 100px;
+}
+
+#crescimento img {
+    width: 420px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+#crescimento div {
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    text-align: justify;
+}
+
+#crescimento h2 {
+    color: #065c87;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+#crescimento p {
+    font-family: 'Codec pro', sans-serif;
+    color: #065c87;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Seção Cuidados Especiais */
+
+#especial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 80px;
+    max-width: 980px;
+    margin: 0 auto;
+    margin-bottom: 170px;
+}
+
+#especial img {
+    width: 360px;
+    height: 320px;
+    border-radius: 20px;
+}
+
+#especial div {
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    text-align: justify;
+}
+
+#especial h2 {
+    color: #065c87;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+#especial p {
+    font-family: 'Codec pro', sans-serif;
+    color: #065c87;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+
+@import url(codec-pro.regular.ttf);
+
+/* Seção de contato */
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #304d97;
+    width: 100%;
+}
+
+.contato {
+    padding: 50px;
+    background-color: #ebf0f4;
+    color: #065c87;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.titulo-contato {
+    font-size: 2em;
+    margin: 0;
+    color: #310663;
+}
+
+.informacoes {
+    text-align: left;
+    padding: 0px 50px;
+}
+
+.informacoes p {
+    margin: 10px 0;
+}
+
+.informacoes h2 {
+    margin: 10px 0;
+    line-height: 2;
+}
