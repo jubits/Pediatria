@@ -29,7 +29,7 @@ li {
 
 header {
     background-color: #f4f8fe;
-    padding: 10px 0;
+    padding: 5px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,7 @@ header {
 header h1 {
     list-style: none;
     margin-left: 50px;
-    color: #065c87;
+    color: #310663;
 }
 
 header nav ul {
@@ -71,8 +71,6 @@ section {
     padding: 40px 20px;
     margin: 20px 0;
 }
-  
-
 
 /* Carrossel */
 
@@ -80,6 +78,7 @@ section {
     margin: auto;
     width: 100%;
     height: 80vh;
+    overflow: hidden;
 }
 
 .carrossel {
@@ -90,23 +89,28 @@ section {
 .slide {
     min-width: 100%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide img {
     width: 100%;
     height: 90%;
+    object-fit: cover;
 }
 
-/* Sobre */
+/* Quem nos somos/sobre */
 
 #sobre {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 80px 20px;
     gap: 65px;
     max-width: 980px;
     margin: 0 auto;
+    padding-top: 100px;
 }
 
 #sobre img {
@@ -127,12 +131,13 @@ section {
 #sobre h2 {
     color: #065c87;
     font-size: 40px;
+    margin-top: 45px;
 }
 
 #sobre p {
     font-family: 'Codec pro', sans-serif;
     color: #065c87;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.6;
 }
 
@@ -182,19 +187,19 @@ section {
     line-height: 1.6;
 }
 
-/* Informativo */
+/* Card Informativo */
 
-.informativo{
+.informativo {
     font-size: 50px;
-    margin-left: 190px;
+    margin-left: 200px;
     color: #065c87;
-
+    padding-top: 100px;
 }
 
 #cuidados {
     display: flex;
     max-width: 1000px;
-    margin: auto;
+    margin: auto; 
 }
 
 .informacao-item {
@@ -287,15 +292,17 @@ h3 {
 
 #crescimento h2 {
     color: #065c87;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
+    margin-top: 15px;
     text-align: start;
 }
+
 
 #crescimento p {
     font-family: 'Codec pro', sans-serif;
     color: #065c87;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.6;
 }
 
@@ -306,15 +313,15 @@ h3 {
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    gap: 80px;
+    gap: 85px;
     max-width: 980px;
     margin: 0 auto;
     margin-bottom: 170px;
 }
 
 #especial img {
-    width: 360px;
-    height: 320px;
+    width: 370px;
+    height: 350px;
     border-radius: 20px;
 }
 
@@ -327,21 +334,54 @@ h3 {
 
 #especial h2 {
     color: #065c87;
-    font-size: 23px;
-    margin-bottom: 10px;
+    font-size: 30px;
 }
 
 #especial p {
     font-family: 'Codec pro', sans-serif;
     color: #065c87;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
+    margin-bottom: 30px;
 }
 
 
+/*Seção do quiz */
+
+#secquiz{
+    display: flex;
+    padding: 40px 210px;
+    gap: 70px;
+}
+
+.texto{
+    width: 50%;
+    font-family: 'Codec pro', sans-serif;
+    color: #065c87;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.quizurembed{
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+}
+
+.quiz{
+    justify-content: flex-start;    
+    align-items: center;
+    flex-direction: column;  
+    width: 50%; 
+    margin-left: auto; 
+    margin-bottom: 20px;
+    max-height: none;
+}
 
 
-@import url(codec-pro.regular.ttf);
 
 /* Seção de contato */
 

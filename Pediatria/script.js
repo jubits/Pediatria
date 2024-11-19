@@ -28,7 +28,9 @@ function mostrarInformacao(id) {
     const conteudos = {
         cuidado: `
             <h2>Cuidados Essenciais para Bebês e Crianças</h2>
-            <p>Como enfermeiros especializados em cuidados neonatais e pediátricos, nosso foco é ajudar as crianças a crescerem saudáveis e felizes desde os primeiros dias. Com este guia, vamos orientar os pais sobre cuidados essenciais, prevenção de doenças e sinais de saúde, para que cada criança se desenvolva com segurança e bem-estar. Estamos aqui para apoiar e informar, tornando o processo mais fácil para toda a família.</p>
+            <p>Os cuidados com a saúde infantil são essenciais para garantir o crescimento saudável da criança. Desde o nascimento, é importante acompanhar a alimentação, as vacinas e o desenvolvimento físico e mental. A enfermagem neonatal e pediátrica orienta os pais sobre como oferecer o melhor cuidado, identificando precocemente qualquer necessidade de intervenção.
+
+Este card oferece informações sobre os principais cuidados que toda criança precisa para se desenvolver com saúde e bem-estar.</p>
         `,
         alimentacao: `
             <h2>Alimentação Saudável - Dicas Essenciais</h2>
